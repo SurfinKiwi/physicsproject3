@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark"> <!-- New meta tag to indicate dark theme -->
+    <title>Honors Project 3 Physics 196</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>⚡ Honors Project 3: Physics 196 ⚡</h1>
+        <p>Calculate the electric field at point P for a nonuniform linear charge density <span class="lambda">λ =
+                αx</span>.</p>
+
+        <label for="pieces">Number of Pieces:</label>
+        <input type="number" id="pieces" min="1" value="100">
+        <button onclick="calculateElectricField()">Calculate Electric Field</button>
+
+        <div class="output" id="output"></div>
+        <canvas id="electricFieldChart"></canvas> <!-- Canvas for Chart -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
